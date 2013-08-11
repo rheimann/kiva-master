@@ -1,8 +1,8 @@
 #############kivabigtable(kiva_loans.loan_id, funded_amount, activity, status, kiva_loans_terms.loan_amount, paid_amount, sector, funded_date, use, disbursal_date)
 drv <- dbDriver("PostgreSQL")
 
-con <- dbConnect(drv, host='analytics.data-tactics-corp.com', port='5432', dbname='kiva',
-                 user='cfisk', password='47Njt**')  # change to your password
+con <- dbConnect(drv, host='hostname', port='port', dbname='dbname',
+                 user='username', password='password')  # change to your password
 
 bigtable1<-dbReadTable(con,"kiva_bigtble")
 
