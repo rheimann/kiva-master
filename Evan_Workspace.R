@@ -114,8 +114,8 @@ install.packages("PostgreSQL")
 library("PostgreSQL")
 drv <- dbDriver("PostgreSQL")
 
-con <- dbConnect(drv, host='analytics.data-tactics-corp.com', port='5432', dbname='kiva',
-                 user='ehansen', password='Q3At$t*')  # change to your password
+con <- dbConnect(drv, host='hostname', port='port', dbname='dbname',
+                 user='username', password='password')  # change to your password
 
 
 ######
